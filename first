@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fernweh Coffee — Direct-trade, small-batch roasts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#1F1B16;
+    --paper:#EDE6D6;
+    --paper-light:#FAF7F0;
+    --rust:#C1652F;
+    --olive:#6B7154;
+    --line:rgba(31,27,22,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--paper-light);
+    color:var(--charcoal);
+    font-family:'Inter', sans-serif;
+    line-height:1.5;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit; cursor:pointer; border:none; background:none;}
+
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--paper-light);
+    border-bottom:1px solid var(--line);
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 32px;
+  }
+  .logo{font-size:1.3rem; font-weight:600;}
+  .logo span{color:var(--rust);}
+  nav{display:flex; gap:28px; font-size:0.92rem;}
+  .cart-btn{
+    display:flex; align-items:center; gap:8px;
+    font-size:0.92rem; border:1px solid var(--charcoal); padding:8px 16px; border-radius:2px;
+  }
+  .cart-count{
+    background:var(--rust); color:var(--paper-light); font-size:0.72rem;
+    width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  }
+
+  .hero{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px;
+    padding:80px 32px 90px; max-width:1200px; margin:0 auto;
+    align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 5vw, 3.6rem);
+    line-height:1.05;
+    max-width:11ch;
+  }
+  .hero p{
+    margin-top:22px; max-width:42ch; color:#4a4438; font-size:1.02rem;
+  }
+  .roast-date{
+    margin-top:28px; font-size:0.85rem; color:var(--olive);
+    border-left:2px solid var(--olive); padding-left:12px;
+  }
+  .hero-visual{
+    aspect-ratio:4/5; background:
+      radial-gradient(circle at 30% 20%, #d8a97a 0%, transparent 45%),
+      linear-gradient(165deg, var(--rust) 0%, #8a3f1c 55%, var(--charcoal) 100%);
+    border-radius:4px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-visual::after{
+    content:"01 — HARVEST · 02 — ROAST · 03 — CUP";
+    position:absolute; bottom:20px; left:20px; right:20px;
+    color:rgba(255,255,255,0.85); font-size:0.72rem; letter-spacing:0.04em;
+  }
+
+  .section{padding:70px 32px; max-width:1200px; margin:0 auto;}
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    margin-bottom:36px; border-bottom:1px solid var(--line); padding-bottom:18px;
+  }
+  .section-head h2{font-size:1.8rem;}
+  .section-head p{color:#6b6355; font-size:0.9rem; max-width:38ch;}
+
+  .grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:28px;
+  }
+  .card{
+    display:flex; flex-direction:column; gap:12px;
+  }
+  .card-img{
+    aspect-ratio:1; border-radius:3px; position:relative; overflow:hidden;
+    display:flex; align-items:flex-end; padding:14px;
+  }
+  .card-img span{
+    color:var(--paper-light); font-size:0.72rem; background:rgba(0,0,0,0.35);
+    padding:3px 8px; border-radius:2px;
+  }
+  .card h3{font-size:1.08rem; font-weight:600; font-family:'Inter',sans-serif;}
+  .card .origin{font-size:0.82rem; color:#6b6355;}
+  .card-footer{display:flex; justify-content:space-between; align-items:center; margin-top:4px;}
+  .price{font-weight:600;}
+  .add-btn{
+    border:1px solid var(--charcoal); padding:7px 14px; font-size:0.82rem; border-radius:2px;
+    transition:background 0.15s, color 0.15s;
+  }
+</body>
+</html>
